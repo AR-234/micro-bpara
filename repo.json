@@ -1,0 +1,14 @@
+[{
+  "Name": "bpara",
+  "Description": "better paragraphs for micro",
+  "Website": "https://github.com/AR-234/micro-bpara",
+  "Tags": ["workflow"],
+  "Versions": [
+    {
+      "Version": "0.1.0",
+      "Require": {
+        "micro": ">=2.0.13"
+      }
+    }
+  ]
+}]
