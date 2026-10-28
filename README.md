@@ -13,17 +13,21 @@ Install with:
 
 ### Keybindings for bindings.json:
 
-```"CtrlUp":        "lua:bpara.ParagraphPrevious",
+```
+"CtrlUp":        "lua:bpara.ParagraphPrevious",
 "CtrlDown":      "lua:bpara.ParagraphNext",
 "ShiftCtrlDown": "lua:bpara.SelectParagraphNext",
-"ShiftCtrlUp":   "lua:bpara.SelectParagraphPrevious"```
+"ShiftCtrlUp":   "lua:bpara.SelectParagraphPrevious"
+```
 
 ### Keybindings with micro-ydir:
 
-```"CtrlDown": "lua:bpara.ParagraphNext,lua:ydir.ydir_cursor_end",
+```
+"CtrlDown": "lua:bpara.ParagraphNext,lua:ydir.ydir_cursor_end",
 "CtrlUp": "lua:bpara.ParagraphPrevious,lua:ydir.ydir_cursor_start",
 "ShiftCtrlDown": "lua:bpara.SelectParagraphNext",
-"ShiftCtrlUp":   "lua:bpara.SelectParagraphPrevious"```
+"ShiftCtrlUp":   "lua:bpara.SelectParagraphPrevious"
+```
 
 ## Settings `~/.config/mirco/settings.json`
  - `"bpara.Margin": 5,`
