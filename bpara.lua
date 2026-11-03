@@ -30,12 +30,20 @@ end
 local function jump(bp, dir, select)
 	local y = target(bp, dir)
 
-	if select then
-		bp.Cursor:SetSelectionStart(buffer.Loc(0, y))
-		bp.Cursor:SetSelectionEnd(buffer.Loc(bp.Cursor.X, bp.Cursor.Y))
-	else
-		bp.Cursor:Deselect(true)
-		bp.Cursor:GotoLoc(buffer.Loc(0, y))
+	while bp.Cursor.Y ~= y do
+		if dir > 0 then
+			if select then 
+				bp:SelectDown()
+			else
+				bp.Cursor:Down()
+			end
+		else
+			if select then 
+				bp:SelectUp()
+			else
+				bp.Cursor:Up()
+			end
+		end
 	end
 
 	local margin = config.GetGlobalOption("bpara.Margin")
